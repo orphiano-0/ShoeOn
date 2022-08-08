@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery</title> 
+        <link rel="stylesheet" type="text/css" href="../css/sty2.css">
+    </head>
+    <body>
+    
+        <h2 align=right> 
+            <a href=home.html> Home</a> |
+            <a href=gallery.html> Gallery</a> |
+            <a href=order.html> Order Now</a> |
+            <a href=contact.html> Contact Us</a> |
+            <a href=about.html> About Us</a> 
+        </h2> 
+        <h1>Gallery</h1>
+
+        <div class="full-img" id="fullimgbox">
+            <img src="../images/shoes2.jpeg" id="fullimg">
+            <span onclick="closefullimg()">Esc</span>
+        </div>
+
+        <center>
+        <div class="img-gallery">
+            <img src="../images/shoes2.jpeg" onclick="openfullimg(this.src)" width="300" height="280">
+            <img src="../images/shoes3.jpeg" onclick="openfullimg(this.src)" width="300" height="280">
+            <img src="../images/shoes4.jpg"  onclick="openfullimg(this.src)" width="300" height="280">
+            <img src="../images/shoes5.jpg"  onclick="openfullimg(this.src)" width="300" height="280">
+            <img src="../images/shoes6.jpg"  onclick="openfullimg(this.src)" width="300" height="280">
+            <img src="../images/shoes7.jpg"  onclick="openfullimg(this.src)" width="300" height="280"> 
+            <img src="../images/shoes8.jpeg" onclick="openfullimg(this.src)" width="300" height="280">
+            <img src="../images/shoes9.jpg"  onclick="openfullimg(this.src)" width="300" height="280">
+        </div>
+        </center>
+
+    <script>
+        var fullimgbox = document.getElementById("fullimgbox");
+        var fullimg = document.getElementById("fullimg");
+
+        function openfullimg(pic){
+            fullimgbox.style.display = "flex";
+            fullimg.src = pic;
+        }
+        function closefullimg(){
+            fullimgbox.style.display = "none";
+        }
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,169 @@
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    background-image: url(../images/fadingblack.jpg);
+    width: 100%;
+    height: 100%;
+}
+a:link, a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover, a:active {
+    color:gray;
+    background-color: transparent;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 20px;
+}
+h1 {
+    color: white;
+    font-size: 59px;
+    font-family: "papyrus";
+    text-align: center;
+}
+h2 {
+    color: white;
+    font-size: 22px;
+    margin-right: 30px;
+    font-family: "courier new", serif;
+    margin-top: 25px;
+}
+h3 {
+    color: white;
+    font-size: 15px;
+    font-family: "lucida handwriting", serif;
+}
+img {
+    margin-left: 70px;
+    width: 700px;
+    height: 400px;
+}
+.contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -150px;
+}
+form {
+    width: 100%;
+    max-width: 600px;
+}
+.input-group {
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    font-size: 15px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: white;
+    cursor: text;
+    transition: 0.2s;
+}
+button {
+    padding: 10px 0;
+    color: white;
+    outline: 0;
+    background: transparent;
+    border: 1px solid white;
+    width: 100%;
+    cursor: pointer;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .input-group{
+    flex-basis: 46%;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: transparent;
+}
+.content {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin: 30px auto;
+}
+.content .article{
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+    background-color: gray(185, 105, 105);
+    padding: 25px 25px;
+    text-align: center;
+}
+.content .article h3{
+    color: white;
+    font-size: 22px;
+    line-height: 1;
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.content .article p{
+    margin-top: 30px;
+    font-size: 19px;
+    line-height: 1;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.content .article li{
+    color: white;
+    font-size: 15px;
+    line-height: .7;
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
+} 
+.content .article a{
+    font-size: 22px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: white;
+    border-radius: 25px;
+    color: black;
+    border: 1px solid #cc0000;
+    letter-spacing: 1.5px;
+    margin-top: 35px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.content .article a:hover{
+    background-color: white;
+    color: #cc0000;
+    transition: 0.2s ease;
+}
+.image-section{
+    width: 100%;
+    margin: auto;
+}
+.image-section img{
+    width: 100%;
+    margin: auto;
+}
+
